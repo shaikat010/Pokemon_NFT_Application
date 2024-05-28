@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  /* Primary */
+
+  --Soft: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--main-bg);
+  color: hsl(215, 51%, 70%);
+  padding: 1.25rem;
+}
+.container {
+  padding: 1.6rem;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+}
+.container .main-image img {
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+.container .main-image {
+  position: relative;
+}
+.container .main-image div {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 4px);
+  /* text-align: center; */
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 10px;
+  z-index: 999;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.container .main-image div img {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.container .main-image div:hover {
+  opacity: 1;
+}
+p {
+  font-weight: 300;
+}
+.tagline p {
+  line-height: 1.8rem;
+}
+.container h3 {
+  padding: 1rem 0;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.3s ease-in;
+}
+.container h2:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+
+.container .ethereum-coins {
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 0;
+}
+.container .ethereum-coins img {
+  margin-right: 0.5rem;
+}
+.container .ethereum-coins ul li:first-child {
+  font-weight: 600;
+  color: var(--Cyan);
+}
+.container .user-profile {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 0 0;
+}
+.container .user-profile img {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 1rem;
+}
+.container .user-profile p span {
+  color: var(--White);
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+}
+.container .user-profile p span:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+}
+.attribution {
+  padding-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 400px) {
+  .container {
+    margin: auto;
+    margin-top: 4rem;
+    width: 375px;
+  }
+}
+
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}

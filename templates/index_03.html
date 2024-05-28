@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles_03.css') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24"><path d="M796 936L580 720q-28 23-63 35.5T444 768q-116 0-197-81T166 490q0-116 81-197t197-81q116 0 197 81t81 197q0 41-12.5 76T720 663l216 216-140 140zM444 684q83 0 141.5-58.5T644 484q0-83-58.5-141.5T444 284q-83 0-141.5 58.5T244 484q0 83 58.5 141.5T444 684z"/></svg>
+        </button>
+    </div>
+
+  <div class="container">
+    <article class="main-image">
+      <img src="images/image-equilibrium.jpg" alt="Equilibrium Image">
+      <div>
+        <img src="images/icon-view.svg" alt="">
+      </div>
+    </article>
+    <article>
+      <h3>Equilibrium #3429</h3>
+    </article>
+
+    <article class="tagline">
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    </article>
+
+    <article class="ethereum-coins">
+      <ul>
+        <li>
+          <img src="images/icon-ethereum.svg" alt="Ethereum Image">
+          0.041 ETH
+        </li>
+        <li>
+          <img src="images/icon-clock.svg" alt="Clock Image">
+          3 days left
+        </li>
+      </ul>
+    </article>
+
+
+
+</body>
+</html>
