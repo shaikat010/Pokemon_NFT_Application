@@ -27,13 +27,13 @@ def get_form_data():
             filename = secure_filename(uploaded_file.filename)
             image_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             uploaded_file.save(image_path)
-            move_to_ipfs(image_path)
+            cid = move_to_ipfs(image_path)
 
         print(f"This is the upload file {uploaded_file}")
         print(type(uploaded_file))
         print([pokemon_name, pokemon_type, pokemon_power])
 
-    return render_template('index_02.html')
+    return render_template('index_02.html',image_url = 'static\pikachu.png')
 
 
 if __name__ == '__main__':

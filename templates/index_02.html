@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>This is the second index file</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Preview Card</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_02.css') }}">
 </head>
 <body>
-
-<h1>This is the second index file</h1>
-
+    <div class="card">
+        <img src="{{ image_url }}" alt="NFT Image" class="nft-image">
+        <div class="nft-info">
+            <h2 class="nft-name">Pikachu</h2>
+            <p class="nft-type">Type: <span>Electric</span></p>
+            <p class="nft-power">Power: <span>500</span></p>
+        </div>
+    </div>
 </body>
 </html>
+

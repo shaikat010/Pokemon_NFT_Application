@@ -9,4 +9,6 @@ def move_to_ipfs(image_path):
 
     print(res)
 
-    print(res["Hash"])
+    cid = (res["Hash"])
+
+    return cid
