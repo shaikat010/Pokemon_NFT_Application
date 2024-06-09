@@ -33,12 +33,17 @@ def get_form_data():
         print(type(uploaded_file))
         print([pokemon_name, pokemon_type, pokemon_power])
 
-    return render_template('index_02.html', image_url='static\pikachu.png')
+    return render_template('index_04.html', image_url='static\pikachu.png')
 
 
 @app.route("/confirm", methods=['POST', 'GET'])
 def confirm_NFT_mint():
-    return render_template("index_03.html")
+    return render_template("index_04.html")
+
+
+@app.route("/collection", methods=['POST', 'GET'])
+def current_collection():
+    return render_template("index_05.html")
 
 
 if __name__ == '__main__':
